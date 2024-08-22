@@ -1,0 +1,310 @@
+%-------------------------
+% Resume in Latex
+% Author: Matty
+% Based on: https://github.com/jakegut/resume (which was itself based on https://github.com/sb2nov/resume)
+% License: MIT
+%------------------------
+
+\documentclass[ letterpaper ,11pt]{article}
+
+\usepackage{tabularx}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+\usepackage{fontawesome5}
+
+
+\input{glyphtounicode}
+
+% -------------------- FONT OPTIONS --------------------
+% sans-serif
+\usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{helvet}
+% serif
+% \usepackage{charter}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-1in} % Default was -.5in
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section Formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Subsection formatting
+\titleformat{\subsection}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{\hspace{-.15in}}{0em}{}[\color{black}\vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% -------------------- CUSTOM COMMANDS --------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{ 2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\setlength{\footskip}{4pt}
+
+% -------------------- START OF DOCUMENT --------------------
+\begin{document}
+
+% -------------------- HEADING--------------------
+\begin{flushright}
+  % \vspace{-4pt}
+  \color{gray}
+  \item
+  Last Updated on June 24th, 2024
+\end{flushright}
+
+\vspace{-5pt}
+
+\begin{align}
+    \textbf{\Huge  Anurag Ashok Munde} \\ \vspace{10pt}
+    \small 
+    \color{black}\faIcon{github} \hspace{0.01cm}\color{black}
+    \href{https://github.com/Anarogk}{\textbf{Github }} $|$
+    \hspace{0.1cm}
+    \color{blue}\faIcon{code}
+    \color{black}\href{https://anuragmunde.framer.website/}
+    {\textbf{anuragmunde.website}}
+    \hspace{0.1cm}$|$
+    \hspace{0.1cm}
+    \color{blue}\faIcon{linkedin} \hspace{0.01cm} 
+    \color{black}\href{https://www.linkedin.com/in/anuragmunde}{\textbf{Linkedin }} 
+    $ | $
+    \hspace{0.1cm}
+    \color{black}\faIcon{envelope} \hspace{0.01cm}
+    \color{black}\href{mailto:anuragmunde002@gmail.com} 
+    {\textbf{anuragmunde002@gmail.com}} 
+    \hspace{0.1cm}$|$
+    \color{blue}\faPhone \hspace{0.01cm}
+    \color{black}\href{tel:917038872898}
+    {\textbf{+91 70388 72898}}
+\end{align}
+
+
+
+% ------------------------------------Summary ---------------------------
+
+\section{Summary}
+
+    \vspace{3pt}
+    {  \hspace{3pt} Recent computer science graduate eager to contribute to innovative software solutions. Possessing a strong foundation in problem-solving and a keen interest in technology, seeking a challenging role to kickstart a career in software development.}
+
+
+% -------------------- SKILLS --------------------
+% \section{Technical Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \vspace{3pt}
+%      \textbf{Languages}{: Python,  }\textbf{C++, Go,}{ Javascript,}\textbf{ Bash.} \\
+%      \vspace{3pt}
+%      \textbf{Tools}{: Git, GitHub, Visual Studio.}\\
+%      \vspace{3pt}
+%      \textbf{Frameworks}{: NodeJs, Express , Reactjs} \textbf{QT.}\\
+%      \vspace{3pt}
+%      \textbf{Technologies}{:  Docker, }\textbf{kubernetes, Jenkins.}\\
+%      \vspace{3pt}
+%      \textbf{Databases}{: MySQL, PostgreSQL, MongoDB.}\\
+%      \vspace{3pt}
+%      \textbf{Others}{: Linux, Tableau}\textbf{.}
+%      % { Terraform}\textbf{.}
+%      % \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
+     
+%      % \textbf{Libraries}{: pandas, NumPy, Matplotlib}
+     
+%     }}
+%     \vspace{6pt}
+%  \end{itemize}
+
+
+
+
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{lX}
+\vspace{1pt}
+\textbf{Languages:} & \hspace{0.1cm} \small{Python, C++, \textbf{Go}, JavaScript, \textbf{Bash}} \\
+\vspace{1pt}
+\textbf{Tools:} & \hspace{0.1cm} \small{\textbf{Git}, GitHub, Visual Studio} \\
+\vspace{1pt}
+\textbf{Frameworks:} & \hspace{0.1cm} \small{NodeJs, Express, Reactjs, QT} \\
+\vspace{1pt}
+\textbf{Technologies:} & \hspace{0.1cm} \small{\textbf{Docker}, Kubernetes, Jenkins} \\
+\vspace{1pt}
+\textbf{Databases:} & \hspace{0.1cm} \small{\textbf{MySQL, PostgreSQL}, MongoDB} \\
+\vspace{1pt}
+\textbf{Others:} & \hspace{0.1cm} \small{\textbf{Linux.}} \\
+\end{tabularx}
+
+
+% % -------------------- EXPERIENCE --------------------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+
+%           \resumeProjectHeading
+%           {\textcolor{blue}{\textbf{\href{https://oasisinfobyte.com/#about}{Oasis Infobytes}}}}{Remote} \vspace{-5pt}
+%           \resumeSubSubheading{Job Description: \textbf{Data Science Intern} {\textit{\href{https://drive.google.com/file/d/19rKZzoXETyiHMbLhcLSNC3Nk7A0Vvvqa/view?usp=sharing}{(Experience certificate)}}}}{ sept 2023 - oct 2023}
+%           \vspace{5pt}
+%           % \footnotesize\emph{Data Science Intern}}{Feb 2023 - Apr 2023 }
+%           \small{\begin{itemize}
+%           \item Gained hands-on experience in data science and machine learning by working on various real-world projects.
+%           \item Built and implemented machine learning models to solve complex data science problems.Performed data cleaning and pre-processing tasks to prepare datasets for analysis.
+%           \item Created interactive visualizations using libraries like Plotly or Dash to enhance data exploration and communication.
+          
+%           \end{itemize}
+%           }
+          
+%     \resumeSubHeadingListEnd
+
+    
+% -------------------- PROJECTS --------------------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textcolor{blue}{\textbf{\href{https://github.com/Anarogk/Abit-torrrent}{Gopherrent}} } $|$ \footnotesize\emph{Go, libtorrent-go, BadgerDB, Cobra} }{}\vspace{ -1pt}
+        \resumeItemListStart
+            \resumeItem{Developed a BitTorrent client from scratch using Go, implementing the BitTorrent protocol to support efficient peer-to-peer \textbf{file sharing}.} 
+            \resumeItem{Designed a \textbf{command-line interface (CLI)} using Cobra for intuitive user interaction, allowing users to add, remove, and monitor torrents.}
+            \resumeItem{Conducted \textbf{testing and debugging} to ensure robust error handling, data integrity, and fault tolerance across various network conditions.}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textcolor{blue}{\textbf{Resolver (DNS server)}} $|$ \footnotesize\emph{ Go, net, go-cache, zap, go-test }}{} \vspace{-1pt}
+        \resumeItemListStart
+            \resumeItem{Built a Robust \textbf{DNS Server} in Golang processing DNS queries and responses.}
+            \resumeItem{Integrated a robust \textbf{logging system} with modern \textbf{ring buffers} with zap resulting in \textbf{8-10\% lower logging latency.}}
+            \resumeItem{Implemented caching for frequently queried records using go-cache. Utilized concurrency for efficient query handling}
+        \resumeItemListEnd
+          
+        % \resumeProjectHeading
+        % {\textbf{Kowl} $|$ \footnotesize\emph{Bash, Kafka, Prometheus, sarama  }}{}\vspace{3pt}
+        % \resumeItemListStart
+        %     \resumeItem{Utilized Golang's concurrency features for efficient data collection.} 
+        %     \resumeItem{Implemented message producers in Golang to send collected metrics to \textbf{Kafka} and exposed collected metrics as \textbf{Prometheus} compatible endpoints for monitoring.}
+        %     \resumeItem{Enabled querying and alerting based on defined thresholds within Prometheus.}
+        %   \resumeItemListEnd
+          
+        \resumeProjectHeading  
+        {\textcolor{blue}{\textbf{{Customer Data Pipeline Optimization}}} $|$ \footnotesize\emph{PySpark, SQL, Airflow, }}{} \vspace{0pt}
+        \resumeItemListStart
+            \resumeItem{Developed a robust PySpark-based \textbf{ETL pipeline} to process and transform large-scale customer datasets efficiently.}}
+            \resumeItem{Optimized \textbf{data ingestion} and processing performance by implementing techniques like partitioning.}
+            \resumeItem{Implemented data quality checks and \textbf{validation procedures} to ensure data integrity.}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+    \vspace{8pt}
+
+
+    % -------------------- EDUCATION --------------------
+\section{Education}
+
+  \resumeSubHeadingListStart
+    \vspace{3pt} 
+    \resumeSubheading 
+    {\hspace{-8pt}Bachlors of Engineering (B.E) in Artificial Intelligence and Machine Learning}{July 2020 -June 2024}
+      {\hspace{-8pt}Savitribai Phule Pune University, Pune}{\textbf{GPA: 8.9}} \\ \vspace{9pt}
+  \resumeSubHeadingListEnd
+      
+      \resumeSubHeadingListStart 
+    \resumeSubheading 
+    {\hspace{-8pt}Coursework :}{}
+      {\hspace{-8pt}OOP, Data Structures and Algorithms, Deep Learning, Artificial Neural Networks, Computer Networking, Operating System}{}    
+     
+  \resumeSubHeadingListEnd
+        
+      
+      
+      
+    
+          
+     
+
+\end{document}
+
+
+
+% \resumeSubheading
+    %   {\hspace{-8pt}Vaidyanath College, Parli }{June 2020}
+    %   {\hspace{-8pt}Higher Secondary Certificate}{\textbf{Percentage: 76}}
+
+    % \vspace{6pt}
+
+    % \subsection{Coursework}
+    %   \textbf{Courses:} Object-Oriented Programming, Data Structures \& Algorithms, Embedded Systems, Discrete Math, Linear Algebra, Calculus, Physics, Probability \& Statistics \\
+    %   \textbf{Awards:} Dean's Honor List (3x), AP Scholar with Distinction (2x), World Language History Award (Spanish)
+
+
+
+    
+% \section{Certifications}
+          
+%           \resumeProjectHeading
+%           % {\textbf{Playing the Drums}\vspace{8pt}}{2013 -- 2019}
+%           {\small{IBM Fullstack Javascript Developer Professional Certificate}\vspace{6pt}\\{IBM DevOps and Software Engineering Professional Certificate}}
+          
+          % \resumeProjectHeading
+          % {\textbf{3\textsuperscript{rd} Place Time Keeping Challenge Championship \footnotesize{(Time Keeping Assocation)}}\vspace{8pt}}{Feb. 2022 -- May 2022}
+          % {\small{Won \$1500 nationally competing against high school students in counting seconds and minutes}}
+
+        % \section{Soft Skills}
+        %            \resumeProjectHeading
+        %            {\small{Communication, Problem Solving, presentation.}}
