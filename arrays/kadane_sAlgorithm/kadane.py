@@ -1,6 +1,7 @@
 """
 Kadane's Algorithm 0(n) time and 0(1) space
-
+mainly use maxx for max_so_far and max_end is curr_max or max_now
+this is because maxx should never consider gaps from curr max and add curr max to gapped curr_maxx
 
 """
 
